@@ -1,0 +1,59 @@
+<h2>Creación/edición de productos</h2>
+
+<form novalidate [formGroup]="user" class="formLabel">
+    <fieldset class="label">
+        <label for="name">Nombre del producto:</label>
+        <input type="text" id="name" placeholder="Nombre del producto" 
+        formControlName="title" class="label__dataInput">
+        <div class="error" *ngIf="!formValidator.get('name').valid && 
+        (formValidator.get('name').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset class="label">
+        <label for="price">Precio:</label>
+        <input type="text" id="price" placeholder="Precio en €" 
+        formControlName="price" class="label__dataInput">
+        <div class="error" *ngIf="!formValidator.get('price').valid && 
+        (formValidator.get('price').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset class="label">
+        <label for="data">Descripción:</label>
+        <input type="text" id="url" placeholder="Detalles"
+        formControlName="data" class="label__dataInput">
+        <div class="error" *ngIf="!formValidator.get('data').valid && 
+        (formValidator.get('data').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset class="label">
+        <label for="link">Ruta de la imagen:</label>
+        <input type="text" id="text" placeholder="Url de la imagen"
+        formControlName="link" class="label__dataInput">
+        <div class="error" *ngIf="!formValidator.get('link').valid && 
+        (formValidator.get('link').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset class="label">
+        <label for="opinion">Opinión:</label>
+        <input type="text" id="text" placeholder="Déjanos tu opinión"
+        formControlName="opinion" class="label__dataInput">
+        <div class="error" *ngIf="!formValidator.get('opinion').valid && 
+        (formValidator.get('opinion').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <input type="submit" (ngSubmit)="userSubmit()" class="label__button" value="Guardar">
+        <!-- <button type="submit" class="label__button">Guardar </button> -->
+    </fieldset>
+</form>
+

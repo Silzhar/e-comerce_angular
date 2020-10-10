@@ -1,0 +1,29 @@
+.logo{
+    padding: 30px;
+
+    &__img{
+        display:block;
+        margin:auto;    
+    }
+}
+
+.head{
+    display: flex;
+    background-color: #f8a203;
+    padding: 30px;
+    box-shadow: 10px 12px 10px 8px rgba(0, 0, 0, 0.75);
+}
+
+.link{
+    margin: auto;
+    color:black;
+    padding: 14px;
+    border-radius: 15px;
+
+    &--active {
+        font-weight: 600;
+        color:  rgb(5, 141, 141);
+        background-color: #f7c871;
+    }
+
+}

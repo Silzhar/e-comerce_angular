@@ -1,0 +1,58 @@
+.describ{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 20px;
+
+
+
+    &__products{
+        margin-top: 40px;
+        border-radius: 15px;
+        // border: solid 2px black;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        
+
+        &--img{
+            display:block;
+            margin:auto;
+            width: 200px;
+            height: 200px;
+        }
+
+        &--name{
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 30px;
+            padding: 2px;
+        }
+
+        &--detail{
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        &--price{
+            bottom:0px;
+            right:10px;
+            font-size: 30px;
+            text-decoration: solid;
+        }
+
+    }
+}
+
+.search{
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    position: absolute;
+    left: 1860px;
+    right: 12px;
+    top: 17.86%;
+    bottom: 17.86%;
+    
+}

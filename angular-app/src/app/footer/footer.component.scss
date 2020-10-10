@@ -1,0 +1,14 @@
+.box{
+    background-color: black;
+    color:  white;
+    text-align: center;
+    padding: 20px;
+}
+
+.links{
+    margin: 40px;
+
+    &__item{
+        margin: 40px;
+    }
+}

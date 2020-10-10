@@ -1,0 +1,18 @@
+<input type="text" class="search" [(ngModel)]="searchText" 
+    placeholder="¿Qué estás buscando?">
+<p>{{ searchText }}</p>
+<h1>Listado de Productos</h1>
+
+<div class="describ">
+    <!-- | search: searchText -->
+        <article *ngFor="let product of products | search: searchText">
+            <div class="describ__products">
+                <img class="describ__products--img" src="{{ product.image }}">
+                <a class="describ__products--name">{{ product.name }}</a>
+                <a class="describ__products--detail">{{ product.description }}</a>
+                <a class="describ__products--price">{{ product.price }}€</a>
+            </div>
+        </article>
+        
+    
+</div>
